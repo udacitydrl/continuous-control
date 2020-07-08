@@ -16,7 +16,7 @@ The model successfully solves the environment after 117 episodes.
 
 ## The Model
 
-The model is implemented using torch framework and python 3.  The actor of DDPG Q-learning (DQN) consists of an input layer, an output layer and a number 
+The model is implemented using torch framework and python 3.  The actor of DDPG consists of an input layer, an output layer and a number 
 of hidden layers:
 
 ```
@@ -36,7 +36,7 @@ of hidden layers:
         batch_norm = nn.BatchNorm1d(critic_units[0])
         critic_units[0] += action_size
         hidden_layers = nn.ModuleList([nn.Linear(size_in, size_out) for size_in, size_out in zip(critic_units[:-1], critic_units[1:])])
-        output = nn.Linear(units[-1]+action_size, 1)
+        output = nn.Linear(critic_units[-1], 1)
 ```
 actor_units is an array used to hidden layer units. The batch normalization 
 is applied to the first layer. 
