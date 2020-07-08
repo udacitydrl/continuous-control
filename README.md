@@ -3,7 +3,9 @@
 ## Introduction
 This project solves the first version of Reacher environment. An agent is created and trained to control a 
 double-jointed arm to follow the target locations. 
-![reacher](reacher.jpg)
+
+![reacher](reacher.gif)
+
 A reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
 Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
 
