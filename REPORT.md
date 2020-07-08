@@ -66,7 +66,7 @@ Other hyper parameters used in the model are
 ## Results
 The model runs reasonably fast.  The graph shows the rewards per episode 
 
-![scores](scores.png)
+![scores](score.png)
 
 The average scores per 100 episodes as shown as follows. The model solve the environment after 117 episodes. The agent receives average score more than 13 over the last 100 episode.  
 
