@@ -57,19 +57,19 @@ After some parameter tuning actor_units=critic_units=[128, 128] is selected in t
 
 Other hyper parameters used in the model are 
 
-* Replay buffer size 100,000 
-* batch size = 128
-* Discount factor 0.99 (gamma)
-* Soft update factor 0.001 (tau)
-* Learning rate of the actor 0.0001 
-* Learning rate of the critic 0.0001 
+* Replay buffer size: 100,000 
+* batch size: 128
+* Discount factor: 0.99 (gamma)
+* Soft update factor: 0.001 (tau)
+* Learning rate of the actor: 0.0001 
+* Learning rate of the critic: 0.0001 
 
 ## Results
 The model runs reasonably fast.  The graph shows the rewards per episode 
 
 ![scores](score.png)
 
-The average scores per 100 episodes as shown as follows. The model solve the environment after 117 episodes. The agent receives average score more than 13 over the last 100 episode.  
+The average scores per 100 episodes as shown as follows. The model solves the environment after 117 episodes. The agent receives average score more than 30 over the last 100 episode.  
 
 ```
 Episode 100	Average Score: 5.17
