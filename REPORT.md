@@ -16,7 +16,7 @@ The model successfully solves the environment after 117 episodes.
 
 ## The Model
 
-The model is implemented using torch framework and python 3.  The actor of DDPG consists of an input layer, an output layer and a number 
+The model is implemented using torch framework and python 3.  The actor of DDPG consists of an input, an output and a number 
 of hidden layers:
 
 ```
@@ -28,7 +28,7 @@ of hidden layers:
 where state_size = 33 is the dimension of each state, action_size = 4 is the dimension of each action. actor_units is an array of hidden layer units. The batch normalization 
 is applied to the first layer.
 
-The architecture of the critic  is similar to the actor, consisting of also an input layer, an output layer and a number 
+The architecture of the critic  is similar to the actor, consisting of also an input, an output and a number 
 of hidden layers:
 
 ```
@@ -38,7 +38,7 @@ of hidden layers:
         hidden_layers = nn.ModuleList([nn.Linear(size_in, size_out) for size_in, size_out in zip(critic_units[:-1], critic_units[1:])])
         output = nn.Linear(critic_units[-1], 1)
 ```
-actor_units is an array used to hidden layer units. The batch normalization 
+critic_units is an array used to hidden layer units. The batch normalization 
 is applied to the first layer. 
 As in the standard DDPG, the experience replay uses a replay buffer (ReplayBuffer). ReplayBuffer is implemented using namedtuple and deque of python collections
 
