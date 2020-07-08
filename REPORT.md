@@ -38,8 +38,9 @@ of hidden layers:
         hidden_layers = nn.ModuleList([nn.Linear(size_in, size_out) for size_in, size_out in zip(critic_units[:-1], critic_units[1:])])
         output = nn.Linear(critic_units[-1], 1)
 ```
-critic_units is an array used to hidden layer units. The batch normalization 
+critic_units is an array to define hidden layer units. The batch normalization 
 is applied to the first layer. 
+
 As in the standard DDPG, the experience replay uses a replay buffer (ReplayBuffer). ReplayBuffer is implemented using namedtuple and deque of python collections
 
 ```
