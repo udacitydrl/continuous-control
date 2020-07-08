@@ -50,7 +50,7 @@ As in the standard DDPG, the experience replay uses a replay buffer (ReplayBuffe
 An experience is a named tuple consisting of state, action, reward, next state and done, where done flags if the terminated state is reached. 
 In addition, Ornstein-Uhlenbeck process is used as well.
 
-The model can configured differently, for example,  by selecting  different number of hidden layers and choosing different unit sizes for hidden layers. e
+The model can configured differently, for example,  by selecting  different number of hidden layers and choosing different unit sizes for hidden layers.
 After some parameter tuning actor_units=critic_units=[128, 128] is selected in the final run.
 
 ## Hyper parameters
