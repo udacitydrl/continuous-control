@@ -1,11 +1,9 @@
-# Navigation Project report
+# Continuous-Control Project report
 
 
 ## Introduction
 
-The goal of the agent is to maintain its position at the target location for as many time steps as possible to  solves the first version of Reacher environment.
-
-A reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
+In Reacher environment a reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
 Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities 
@@ -68,7 +66,7 @@ Other hyper parameters used in the model are
 ## Results
 The model runs reasonably fast.  The graph shows the rewards per episode 
 
-![scores](scores.jpg)
+![scores](scores.png)
 
 The average scores per 100 episodes as shown as follows. The model solve the environment after 117 episodes. The agent receives average score more than 13 over the last 100 episode.  
 
