@@ -23,10 +23,10 @@ The algorithm is closely connected to DQN. Given the optimal Q-value, the optima
 optimal Q-value in any given state. DDPG interleaves learning to estimate optimal Q-value with learning to estimate the optimal action. 
 
 In addition, DDPG uses experience replay and Ornstein–Uhlenbeck process.
-* experience replay is used to randomly sample batches to reduce the correlation of experiences in training. https://i.imgur.com/mS6iGyJ.jpg
+* Experience replay is used to randomly sample batches to reduce the correlation of experiences in training. 
 * Ornstein–Uhlenbeck process generates Gaussian noise to explore the action space.
 
-The details of DDPD algorithm is given in the fellowing pseuocode
+The details of DDPD algorithm described in the fellowing pseuocode
 
 ![ddpg](ddpg.jpg)
 
