@@ -20,11 +20,14 @@ DDPG is an algorithm which cocurrently learns an action and Q-value and consists
 * Using off-policy data, i.e, a state and an action pair, the critic learns to estimate Q-values. 
 
 The algorithm is closely connected to DQN. Given the optimal Q-value, the optimal action is the one which generates the 
-optimal Q-value in any given state. DDPG interleaves learning an approximator to optimal Q-value with learning an approximator to the optimal action. 
+optimal Q-value in any given state. DDPG interleaves learning to estimate optimal Q-value with learning to estimate the optimal action. 
 
 In addition, DDPG uses experience replay and Ornstein–Uhlenbeck process.
-* experience replay is used to randomly sample batches to reduce the correlation of experiences in training. 
+* experience replay is used to randomly sample batches to reduce the correlation of experiences in training. https://i.imgur.com/mS6iGyJ.jpg
 * Ornstein–Uhlenbeck process generates Gaussian noise to explore the action space.
+
+The details of DDPD algorithm is given in the fellowing pseuocode
+![scores](score.png)
 
 
 
