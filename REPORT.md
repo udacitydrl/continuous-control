@@ -30,7 +30,7 @@ The details of DDPD algorithm described in the fellowing pseuocode
 
 ![ddpg](ddpg.jpg)
 
-## The Model
+## Implementation
 
 The model is implemented using torch framework and python 3.  The actor of DDPG consists of an input, an output and a number 
 of hidden layers:
@@ -55,7 +55,7 @@ of hidden layers:
         output = nn.Linear(critic_units[-1], 1)
 ```
 critic_units is an array to define hidden layer units. The batch normalization 
-is applied to the first layer. 
+is applied to the first layer. Utility helper contains a couple of functions to help the actor and the critic to reset parameters.
 
 As in the standard DDPG, the experience replay uses a replay buffer (ReplayBuffer). ReplayBuffer is implemented using namedtuple and deque of python collections
 
@@ -66,7 +66,7 @@ As in the standard DDPG, the experience replay uses a replay buffer (ReplayBuffe
 An experience is a named tuple consisting of state, action, reward, next state and done, where done flags if the terminated state is reached. 
 In addition, Ornstein-Uhlenbeck process is used as well.
 
-The model can configured differently, for example,  by selecting  different number of hidden layers and choosing different unit sizes for hidden layers.
+The model can be configured differently by different configurations using Config class, for example,  by selecting  different number of hidden layers and choosing different unit sizes for hidden layers. 
 After some parameter tuning, actor_units=critic_units=[128, 128] is selected in the final run.
 
 ## Hyper parameters
