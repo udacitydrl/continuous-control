@@ -27,10 +27,8 @@ In addition, DDPG uses experience replay and Ornstein–Uhlenbeck process.
 * Ornstein–Uhlenbeck process generates Gaussian noise to explore the action space.
 
 The details of DDPD algorithm is given in the fellowing pseuocode
-![scores](score.png)
 
-
-
+![ddpg](ddpg.jpg)
 
 ## The Model
 
