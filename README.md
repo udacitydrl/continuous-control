@@ -30,5 +30,5 @@ The task is episodic, and in order to solve the environment, the agent must get 
 	[this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) to obtain the environment.
 
 ## Instructions
-Clone the project using git clone  https://github.com/udacitydrl/continuous-control
+Usig Git checkout the project: git clone  https://github.com/udacitydrl/continuous-control. 
 To train the agent, start jupyter notebook, open Continuous_Control.ipynb and execute! For more information, please check instructions inside the notebook.
