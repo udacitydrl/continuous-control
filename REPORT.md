@@ -18,6 +18,7 @@ The model successfully solves the environment after 117 episodes.
 DDPG is an algorithm which cocurrently learns an action and Q-value and consists of an actor and a critic network. 
 * The actor learns to predict an action given a state. 
 * The critic learns to estimate Q-values given a state and an action. 
+
 In addition, DDPG uses experience replay and Ornstein–Uhlenbeck process.
 * experience replay is used to randomly sample batches to reduce the correlation of experiences in training. 
 * Ornstein–Uhlenbeck process generates Gaussian noise to explore the action space.
