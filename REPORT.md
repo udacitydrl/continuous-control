@@ -16,8 +16,11 @@ The model successfully solves the environment after 117 episodes.
 
 ## Brief overview of DDPG algorithm
 DDPG is an algorithm which cocurrently learns an action and Q-value and consists of an actor and a critic network. 
-* The actor learns to predict an action given a state. 
-* The critic learns to estimate Q-values given a state and an action. 
+* Given a state the actor learns to predict action from Q-value. 
+* Using off-policy data, i.e, a state and an action pair, the critic learns to estimate Q-values. 
+
+The algorithm is closely connected to DQN. Given the optimal Q-value, the optimal action is the one which generates the 
+optimal Q-value in any given state. DDPG interleaves learning an approximator to optimal Q-value with learning an approximator to the optimal action. 
 
 In addition, DDPG uses experience replay and Ornstein–Uhlenbeck process.
 * experience replay is used to randomly sample batches to reduce the correlation of experiences in training. 
