@@ -12,7 +12,7 @@ Every entry in the action vector should be a number between -1 and 1.
 
 The project requires that the agent must get an average score of +30 over 100 consecutive episodes. 
 To meet the requirement, the Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) is implemented. 
-The model successfully solves the environment after 117 episodes.
+The model successfully solves the environment after 124 episodes.
 
 ## Brief overview of DDPG algorithm
 DDPG is an algorithm which cocurrently learns an action and Q-value and consists of an actor and a critic network. 
@@ -85,7 +85,7 @@ The model runs reasonably fast.  The graph shows the rewards per episode
 
 ![scores](score.png)
 
-The average scores per 100 episodes as shown as follows. The model solves the environment after 117 episodes. The agent receives average score more than 30 over the last 100 episode.  
+The average scores per 100 episodes as shown as follows. The model solves the environment after 124 episodes. The agent receives average score more than 30 over the last 100 episode.  
 
 ```
 Episode 100	Average Score: 5.17
