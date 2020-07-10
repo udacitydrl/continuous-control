@@ -14,6 +14,17 @@ The project requires that the agent must get an average score of +30 over 100 co
 To meet the requirement, the Deep Deterministic Policy Gradient algorithm (DDPG) [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971) is implemented. 
 The model successfully solves the environment after 117 episodes.
 
+## Brief overview of DDPG algorithm
+DDPG is an algorithm which cocurrently learns an action and Q-value and consists of an actor and a critic network. 
+* The actor learns to predict an action given a state. 
+* The critic learns to estimate Q-values given a state and an action. 
+In addition, DDPG uses experience replay and Ornstein–Uhlenbeck process.
+* experience replay is used to randomly sample batches to reduce the correlation of experiences in training. 
+* Ornstein–Uhlenbeck process generates Gaussian noise to explore the action space.
+
+
+
+
 ## The Model
 
 The model is implemented using torch framework and python 3.  The actor of DDPG consists of an input, an output and a number 
